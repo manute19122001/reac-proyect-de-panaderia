@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getproductos,} from "../../Asycmocks"
+import { getproductos,getProductosPorCategoria} from "../../asycmocks"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 
@@ -13,7 +13,7 @@ const ItemListConteiner = () => {
  const {idcategoria}=useParams ()
  useEffect(()=>{
   
-  const funcionproductos= idcategoria ? getproductosporcategoria:getproductos;
+  const funcionproductos= idcategoria ? getProductosPorCategoria :getproductos;
 
   funcionproductos(idcategoria)
 

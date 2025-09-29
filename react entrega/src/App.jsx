@@ -14,9 +14,14 @@ const App = () => {
 <Navbar/>
 <Routes>
 <Route path="/" element={<ItemListConteiner/>}/>
-<Route/>
 
-</Routes>
+     <Route path="/categoria/:idcategoria" element={<ItemListConteiner/>} />
+      
+
+
+
+
+ </Routes>    
 </BrowserRouter>
 
 

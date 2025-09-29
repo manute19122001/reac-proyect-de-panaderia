@@ -1,4 +1,4 @@
-import { getunproducto } from "../../Asycmocks"
+import { getUnProducto , } from "../Asycmocks"
 import { useEffect, useState } from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
@@ -11,7 +11,7 @@ const ItemDetailConteiner = () => {
  const[producto,setproductos]=useState (null)
   
  useEffect (()=>{
-  getunproducto(3)
+ getUnProducto ()
   .then(respuesta => setproductos(respuesta))
 
 
